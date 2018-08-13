@@ -1,0 +1,31 @@
+<% answers = ["Great !", "Silly question, get dressed and go to work!", "I don't care, get dressed and go to work!"] %>
+
+<h1>Stupid Coaching</h1>
+<div class="container">
+
+<ul>
+<div id="your-question">
+<li><%= @question %></li>
+<li><em><%= " - You" %></em></li>
+</div>
+
+</br>
+
+<div id="coach-answer">
+<% if @question.include?("?")%>
+<li><%= answers[1] %></li>
+<% elsif @question == "I am going to work"%>
+<li><%= answers[0] %></li>
+<% else %>
+<li><%= answers[2] %></li>
+<% end %>
+<li><em><%= "- Your coach" %></em></li>
+
+</div>
+</br>
+<li class="link"><%= link_to "Ask another question", ask_path %></li>
+</ul>
+</div>
+<%= yield %>
+
+

@@ -1,0 +1,34 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+li.link a{
+  text-decoration: none;
+  color: #1E76BD;
+}
+
+#coach-answer {
+  background-color: #FEFFDE;
+  font-weight: bolder;
+  border-left: solid 5px #DDDDDD;
+}
+
+#your-question {
+  border-left: solid 5px #DDDDDD;
+}
+
+.container {
+  display: flex;
+}
